@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la mission et la vision d'ARRIVE, votre plateforme de tourisme et transport au Rwanda.">
+    <title>ARRIVE - À propos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=7">
+</head>
+
+<body>
+
+<header>
+    <nav>
+    <a href="../index.html" class="logo"><img src="../images/logo.png?v=2" alt="ARRIVE" class="logo-img"></a>
+
+    <div class="nav-right">
+      <button id="langToggle" class="lang-btn">EN</button>
+        <div id="navAuthItem"></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+
+    <ul id="navMenu">
+        <li><a href="../index.html" data-en="Home">Accueil</a></li>
+        <li><a href="services.html" data-en="Services">Services</a></li>
+        <li><a href="destinations.html" data-en="Destinations">Destinations</a></li>
+        <li><a href="tours-prives.html" data-en="Private Tours">Tours Privés</a></li>
+        <li><a href="booking.html" data-en="Book Now">Réserver</a></li>
+        <li><a href="faq.html" data-en="FAQ">FAQ</a></li>
+        <li><a href="contact.html" data-en="Contact">Contact</a></li>
+        <li id="navAuthItemMobile"><a href="login.html" data-en="Login">Connexion</a></li>
+    </ul>
+</nav>
+</header>
+
+
+<section class="hero">
+    <h1 data-en="About ARRIVE">À propos de ARRIVE</h1>
+
+    <p data-en="ARRIVE is a platform created to help visitors discover Rwanda easily, safely and comfortably.">
+        ARRIVE est une plateforme créée pour aider les visiteurs à découvrir
+        le Rwanda facilement, avec sécurité et confort.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="tarifs.html" class="btn-secondary" data-en="Pricing">Nos Tarifs</a>
+    </div>
+</section>
+
+
+<section class="about">
+
+    <div class="card">
+        <h3 data-en="🌍 Our Mission">🌍 Notre mission</h3>
+        <p data-en="Offering travelers a simple experience: transport, accommodation, tours and local support.">Offrir aux voyageurs une expérience simple : transport, hébergement, visites et accompagnement local.</p>
+    </div>
+
+    <div class="card">
+        <h3 data-en="🚀 Our Vision">🚀 Notre vision</h3>
+        <p data-en="Becoming a reference for smart tourism in Africa by connecting visitors with the best experiences.">Devenir une référence du tourisme intelligent en Afrique en connectant les visiteurs avec les meilleures expériences.</p>
+    </div>
+
+    <div class="card">
+        <h3 data-en="⭐ Why ARRIVE?">⭐ Pourquoi ARRIVE ?</h3>
+        <p data-en="Because traveling in a new country should be easy, safe and memorable.">Parce que voyager dans un nouveau pays doit être facile, sûr et mémorable.</p>
+    </div>
+
+</section>
+
+
+<footer>
+    <h2>ARRIVE</h2>
+    <p data-en="Your travel companion in Rwanda.">Votre compagnon de voyage au Rwanda.</p>
+    <p>© 2026 ARRIVE Rwanda - Explorez le Rwanda autrement</p>
+  <p><a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: underline;" data-en="Legal Notice">Mentions légales</a></p>
+<p><a href="admin.html" class="admin-link">Admin</a></p>
+
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="../firebase-config.js"></script>
+<script src="../nav-auth.js"></script>
+<script src="../lang.js"></script>
+<script src="../script.js"></script>
+
+  <button id="backToTop" title="Retour en haut">↑</button>
+</body>
+</html>

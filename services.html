@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les services d'ARRIVE : transport, hôtels, tours touristiques et guides locaux au Rwanda.">
+    <title>ARRIVE - Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=7">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo"><img src="../images/logo.png?v=2" alt="ARRIVE" class="logo-img"></a>
+
+        <div class="nav-right">
+            <button id="langToggle" class="lang-btn">EN</button>
+            <div id="navAuthItem"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="../index.html" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-en="Services">Services</a></li>
+            <li><a href="destinations.html" data-en="Destinations">Destinations</a></li>
+            <li><a href="tours-prives.html" data-en="Private Tours">Tours Privés</a></li>
+            <li><a href="booking.html" data-en="Book Now">Réserver</a></li>
+            <li><a href="faq.html" data-en="FAQ">FAQ</a></li>
+            <li><a href="contact.html" data-en="Contact">Contact</a></li>
+            <li id="navAuthItemMobile"><a href="login.html" data-en="Login">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1 data-en="Our Services">Nos Services</h1>
+    <p data-en="ARRIVE helps you discover Rwanda easily and safely.">
+        ARRIVE vous accompagne pour découvrir le Rwanda facilement et en toute sécurité.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="tarifs.html" class="btn-secondary" data-en="Pricing">Nos Tarifs</a>
+    </div>
+</section>
+
+
+<section class="services">
+
+    <div class="service-container">
+
+        <div class="card">
+            <img src="../images/transport.jpg" alt="Service de transport ARRIVE" class="card-img">
+            <h3 data-en="🚗 Transport">🚗 Transport</h3>
+            <p data-en="We pick you up from the airport or your location.">Nous venons vous chercher à l'aéroport ou à votre emplacement.</p>
+            <a href="booking.html?service=transport" class="btn-primary" data-en="Book This Service">Réserver ce service</a>
+        </div>
+
+        <div class="card">
+            <img src="../images/hotel.jpg" alt="Réservation d'hôtel ARRIVE" class="card-img">
+            <h3 data-en="🏨 Hotels">🏨 Hôtels</h3>
+            <p data-en="We help you find accommodation suited to your stay.">Nous vous aidons à trouver un hébergement adapté à votre séjour.</p>
+            <a href="booking.html?service=hotel" class="btn-primary" data-en="Book This Service">Réserver ce service</a>
+        </div>
+
+        <div class="card">
+            <img src="../images/tours.jpg" alt="Tours touristiques ARRIVE" class="card-img">
+            <h3 data-en="🌍 Tours">🌍 Tours touristiques</h3>
+            <p data-en="Discover Kigali, the parks, culture and landscapes of Rwanda.">Découvrez Kigali, les parcs, la culture et les paysages du Rwanda.</p>
+            <a href="booking.html?service=visite" class="btn-primary" data-en="Book This Service">Réserver ce service</a>
+        </div>
+
+        <div class="card">
+            <img src="../images/guide.jpg" alt="Guide local ARRIVE" class="card-img">
+            <h3 data-en="👨‍💼 Local Guide">👨‍💼 Guide local</h3>
+            <p data-en="Personalized support from people who know the country.">Un accompagnement personnalisé avec des personnes qui connaissent le pays.</p>
+            <a href="booking.html?service=guide" class="btn-primary" data-en="Book This Service">Réserver ce service</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <h2>ARRIVE</h2>
+    <p data-en="Your travel companion in Rwanda.">Votre compagnon de voyage au Rwanda.</p>
+    <p>© 2026 ARRIVE Rwanda - Explorez le Rwanda autrement</p>
+  <p><a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: underline;" data-en="Legal Notice">Mentions légales</a></p>
+<p><a href="admin.html" class="admin-link">Admin</a></p>
+
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="../firebase-config.js"></script>
+<script src="../nav-auth.js"></script>
+<script src="../lang.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
