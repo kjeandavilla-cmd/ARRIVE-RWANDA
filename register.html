@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Créez votre compte ARRIVE pour réserver facilement votre transport, hôtel et visites au Rwanda.">
+    <title>ARRIVE - Inscription</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=7">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo"><img src="../images/logo.png?v=2" alt="ARRIVE" class="logo-img"></a>
+
+        <div class="nav-right">
+          <button id="langToggle" class="lang-btn">EN</button>
+            <div id="navAuthItem"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="../index.html" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-en="Services">Services</a></li>
+            <li><a href="destinations.html" data-en="Destinations">Destinations</a></li>
+            <li><a href="tours-prives.html" data-en="Private Tours">Tours Privés</a></li>
+            <li><a href="booking.html" data-en="Book Now">Réserver</a></li>
+            <li><a href="faq.html" data-en="FAQ">FAQ</a></li>
+            <li><a href="contact.html" data-en="Contact">Contact</a></li>
+            <li id="navAuthItemMobile"><a href="login.html" data-en="Login">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1 data-en="Create an Account">Créer un compte</h1>
+    <p data-en="Join ARRIVE and prepare your trip to Rwanda.">
+        Rejoignez ARRIVE et préparez votre voyage au Rwanda.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="tarifs.html" class="btn-secondary" data-en="Pricing">Nos Tarifs</a>
+    </div>
+</section>
+
+
+<section class="form-container">
+
+<form id="registerForm">
+  <p id="registerMessage" class="form-message"></p>
+
+    <label for="nom" data-en="Full Name">Nom complet</label>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+    <label for="email" data-en="Email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+    <label for="password" data-en="Password">Mot de passe</label>
+    <input type="password" id="password" name="password" placeholder="Créer un mot de passe" required>
+
+    <label for="confirm-password" data-en="Confirm Password">Confirmer le mot de passe</label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer" required>
+
+    <button type="submit" data-en="Create My Account">
+        Créer mon compte
+    </button>
+
+    <p class="form-note">
+        <span data-en="Already have an account?">Vous avez déjà un compte ?</span>
+        <a href="login.html" class="link-accent" data-en="Log In">Se connecter</a>
+    </p>
+
+</form>
+
+</section>
+
+
+<footer>
+    <h2>ARRIVE</h2>
+    <p data-en="Your travel companion in Rwanda.">Votre compagnon de voyage au Rwanda.</p>
+    <p>© 2026 ARRIVE Rwanda - Votre voyage commence ici</p>
+  <p><a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: underline;" data-en="Legal Notice">Mentions légales</a></p>
+<p><a href="admin.html" class="admin-link">Admin</a></p>
+
+</footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="../firebase-config.js"></script>
+<script src="../auth.js"></script>
+<script src="../nav-auth.js"></script>
+<script src="../lang.js"></script>
+<script src="../script.js"></script>
+
+  <button id="backToTop" title="Retour en haut">↑</button>
+</body>
+</html>

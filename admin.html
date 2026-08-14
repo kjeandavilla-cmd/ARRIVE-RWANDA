@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRIVE - Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=7">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo"><img src="../images/logo.png?v=2" alt="ARRIVE" class="logo-img"></a>
+
+        <div class="nav-right">
+          <button id="langToggle" class="lang-btn">EN</button>
+            <div id="navAuthItem"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="../index.html" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-en="Services">Services</a></li>
+            <li><a href="destinations.html" data-en="Destinations">Destinations</a></li>
+            <li><a href="tours-prives.html" data-en="Private Tours">Tours Privés</a></li>
+            <li><a href="booking.html" data-en="Book Now">Réserver</a></li>
+            <li><a href="faq.html" data-en="FAQ">FAQ</a></li>
+            <li><a href="contact.html" data-en="Contact">Contact</a></li>
+            <li id="navAuthItemMobile"><a href="login.html" data-en="Login">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1 data-en="Admin Area">Espace Admin</h1>
+    <p data-en="ARRIVE Booking Management">Gestion des réservations ARRIVE</p>
+</section>
+
+
+<section class="form-container" id="adminLoginSection">
+
+    <form id="adminLoginForm">
+        <label for="adminEmail" data-en="Admin Email">Email admin</label>
+        <input type="email" id="adminEmail" placeholder="Votre email" required>
+
+        <label for="adminPassword" data-en="Password">Mot de passe</label>
+        <input type="password" id="adminPassword" placeholder="Votre mot de passe" required>
+
+        <button type="submit" data-en="Log In">Se connecter</button>
+        <p id="adminLoginMessage" class="form-message"></p>
+    </form>
+
+</section>
+
+
+<section id="adminPanel" style="display: none; padding: 20px;">
+
+    <h2 data-en="Received Bookings">Réservations reçues</h2>
+    <div id="reservationsList"></div>
+
+</section>
+
+
+<footer>
+    <h2>ARRIVE</h2>
+    <p data-en="Restricted administration area.">Espace réservé à l'administration.</p>
+    <p><a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: underline;" data-en="Legal Notice">Mentions légales</a></p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="../firebase-config.js"></script>
+<script src="../admin.js"></script>
+<script src="../nav-auth.js"></script>
+<script src="../lang.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>

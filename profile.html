@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRIVE - Mon Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=7">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html" class="logo"><img src="../images/logo.png?v=2" alt="ARRIVE" class="logo-img"></a>
+
+        <div class="nav-right">
+          <button id="langToggle" class="lang-btn">EN</button>
+            <div id="navAuthItem"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="../index.html" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" data-en="Services">Services</a></li>
+            <li><a href="destinations.html" data-en="Destinations">Destinations</a></li>
+            <li><a href="tours-prives.html" data-en="Private Tours">Tours Privés</a></li>
+            <li><a href="booking.html" data-en="Book Now">Réserver</a></li>
+            <li><a href="faq.html" data-en="FAQ">FAQ</a></li>
+            <li><a href="contact.html" data-en="Contact">Contact</a></li>
+            <li id="navAuthItemMobile"><a href="login.html" data-en="Login">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1 data-en="My Profile">Mon Profil</h1>
+    <p data-en="Manage your information and bookings">Gérez vos informations et vos réservations</p>
+</section>
+
+
+<section id="profileContent" style="padding: 20px;">
+
+    <div class="card" style="max-width: 500px; margin: 0 auto 30px;">
+        <h3 data-en="👤 My Information">👤 Mes informations</h3>
+        <p id="profileNom">Chargement...</p>
+        <p id="profileEmail"></p>
+    </div>
+
+    <h2 data-en="My Bookings">Mes réservations</h2>
+    <div id="myReservationsList"></div>
+<h2 style="margin-top: 50px;" data-en="Leave a Review">Laisser un avis</h2>
+
+<div class="form-container" style="margin-top: 20px;">
+    <form id="avisForm">
+        <p id="avisMessage" class="form-message"></p>
+
+        <label for="avisNote" data-en="Your rating">Votre note</label>
+        <select id="avisNote" required>
+            <option value="" data-en="-- Choose --">-- Choisissez --</option>
+            <option value="5" data-en="⭐⭐⭐⭐⭐ Excellent">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4" data-en="⭐⭐⭐⭐ Very Good">⭐⭐⭐⭐ Très bien</option>
+            <option value="3" data-en="⭐⭐⭐ Fair">⭐⭐⭐ Correct</option>
+            <option value="2" data-en="⭐⭐ Disappointing">⭐⭐ Décevant</option>
+            <option value="1" data-en="⭐ Poor">⭐ Mauvais</option>
+        </select>
+
+        <label for="avisTexte" data-en="Your comment">Votre commentaire</label>
+        <textarea id="avisTexte" placeholder="Partagez votre expérience avec ARRIVE" rows="4" required></textarea>
+
+        <button type="submit" data-en="Post My Review">Publier mon avis</button>
+    </form>
+</div>
+</section>
+
+
+<footer>
+    <h2>ARRIVE</h2>
+    <p data-en="Your travel companion in Rwanda.">Votre compagnon de voyage au Rwanda.</p>
+  <p><a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: underline;" data-en="Legal Notice">Mentions légales</a></p>
+
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="../firebase-config.js"></script>
+<script src="../nav-auth.js"></script>
+<script src="../profile.js"></script>
+<script src="../lang.js"></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
